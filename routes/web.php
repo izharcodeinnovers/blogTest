@@ -23,3 +23,4 @@ Route::get('marrige-form',[\App\Http\Controllers\CheckMarrige::class,'index'])->
 Route::post('marrige-result',[\App\Http\Controllers\CheckMarrige::class,'check'])->name('marrige-result');
 Route::get('calculator',[\App\Http\Controllers\CalculatorController::class,'index'])->name('calculator');
 Route::post('calculate',[\App\Http\Controllers\CalculatorController::class,'calculate'])->name('calculate');
+

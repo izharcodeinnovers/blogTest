@@ -24,18 +24,18 @@ class CalculatorController extends Controller
 //        }
 
 
-        $values = $request->all();
-        if (isset($values['input'])){
-            $input = json_decode($values['input'],true);
-        }
-
-        foreach ($values as $key=>$value)
-        {
-            if ($key != 'input'){
-                $inputs[] = is_numeric($value);
-            }
-        }
-        return view('calculate',compact('inputs'));
+//        $values = $request->all();
+//        if (isset($values['input'])){
+//            $input = json_decode($values['input'],true);
+//        }
+//
+//        foreach ($values as $key=>$value)
+//        {
+//            if ($key != 'input'){
+//                $input[] = is_numeric($value);
+//            }
+//        }
+        return view('calculate');
 
     }
 
